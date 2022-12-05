@@ -12,19 +12,27 @@ import { Location } from '@angular/common';
   styleUrls: ['./view-detail.component.css']
 })
 export class ViewDetailComponent implements OnInit {
-
+  //user = USERS; amended
+  //?: safe navigation operator 
 @Input() user?: User;
-  
+  //DOB!: Date;
+
+ /*selectUser?: User;
+onSelect(user: User): void {
+  this.selectUser = user;
+} */
 
   constructor(
-
+  //provide to access url parameter
   private route: ActivatedRoute,
   private UserServiceService: UserServiceService,
-  private Location: Location 
+  private Location: Location //is an Angular service for interacting with the browser.
   ) { }
 
   ngOnInit(): void {
- 
+    /*const id=this.route.snapshot.paramMap.get('id');
+    this.selectUser = USERS.find(selectUser => selectUser.id === id); */
+
     this.getUser();
 
   }
@@ -35,14 +43,15 @@ export class ViewDetailComponent implements OnInit {
       .subscribe(user =>  this.user = user);
   }
 
+  //navigate backwards one step in the browser's history
   goBack(): void {
     this.Location.back();
   }
 
   save(): void{
     if(this.user){
-      this.UserServiceService.updateUser(this.user) 
-        .subscribe(() =>this.goBack()); 
+      this.UserServiceService.updateUser(this.user) //update user details
+        .subscribe(() =>this.goBack()); //goes back to the Previous
     }
   }
 
