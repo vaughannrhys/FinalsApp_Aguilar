@@ -4,91 +4,91 @@ export const MOVIES: Movie[] = [
     { 
         id:"1" ,
         Genre:"Action" ,
-        Title: "Jurassic", 
-        Director: "Michael Bay",
-        ShortDescription: "Animals",
+        Title: "Peaky Blinders", 
+        Director: "John Blake",
+        ShortDescription: "Street Gang",
         Year: "2001",
         Price: 200
     
     },
     {   
         id:"2" ,
-        Genre:"Drama" ,
-        Title: "Romeo and Juliet", 
+        Genre:"Comedy" ,
+        Title: "Sex Education", 
         Director: "Steven Bierg",
-        ShortDescription: "Rose and Boat",
+        ShortDescription: "Instruction of Issues Relating to Human Sexuality",
         Year: "2005",
         Price: 300
     },
     {  
          id:"3" ,
-        Genre:"Crime" ,
-        Title: "The God Father", 
+        Genre:"Action" ,
+        Title: "Breaking Bad", 
         Director: "Ray Monte",
-        ShortDescription: "Guns and Weapons",
+        ShortDescription: "High-school chemistry teacher who is struggling with a recent diagnosis of stage-three lung cancer",
         Year: "2008",
         Price: 400
     },
     {   
         id:"4" ,
-        Genre:"SCI-FI" ,
-        Title: "Godzilla", 
-        Director: "Japan Creator",
-        ShortDescription: "Swords",
+        Genre:"Action, Crime" ,
+        Title: "Narcos", 
+        Director: "Chris Brancanto",
+        ShortDescription: "Drugs",
         Year: "2009",
         Price: 100
     },
     {   
         id:"5" ,
         Genre:"Action" ,
-        Title: "TMNT", 
+        Title: "El Chapo", 
         Director: "Michael Bay",
-        ShortDescription: "Voice",
+        ShortDescription: "Guns",
         Year: "2010",
         Price: 500
     },
     {   
         id:"6" ,
         Genre:"Comedy" ,
-        Title: "Baywatch", 
+        Title: "Wednesday", 
         Director: "Seth Gordon",
-        ShortDescription: "Lifeguard Patrol",
-        Year: "2017",
-        Price: 180
+        ShortDescription: "Monster",
+        Year: "2022",
+        Price: 900
     },
     {   
         id:"7" ,
-        Genre:"Melodrama" ,
-        Title: "The Great Gatsby", 
+        Genre:"Crime" ,
+        Title: "Money Heist", 
         Director: "Baz Luhrmann",
-        ShortDescription: "Love",
+        ShortDescription: "Bank Robbery",
         Year: "2013",
-        Price: 150
+        Price: 420
     },
     {   
         id:"8" ,
-        Genre:"Drugs" ,
-        Title: "The Wolf of Wall Street", 
+        Genre:"Horror" ,
+        Title: "Dark", 
         Director: "Martin Scorsese",
-        ShortDescription: "Money and Fame",
+        ShortDescription: "Monster",
         Year: "2013",
         Price: 280
     },
     {   
         id:"9" ,
-        Genre:"Comedy" ,
-        Title: "21 Jump Street", 
+        Genre:"Action" ,
+        Title: "Alive", 
         Director: " Chris Miller",
-        ShortDescription: "Guns",
+        ShortDescription: "Zombie",
         Year: "2012",
         Price: 140
     },
     {   
         id:"10" ,
-        Genre:"Crime" ,
-        Title: "Ride Along", 
+        Genre:"Fiction" ,
+        Title: "1899", 
         Director: "Tim Story",
-        ShortDescription: "Gangs",
+        ShortDescription: "Time and Space",
         Year: "2014",
         Price: 200
     }
