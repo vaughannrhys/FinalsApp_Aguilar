@@ -1,1 +1,26 @@
-<p>view-details works!</p>
+<div class="container">
+    <span class="list-group" *ngIf="selectedMovie">
+
+        <div class="card border-dark mb-3">
+            <div class="card-header navbar-dark bg-dark text-white">Movie ID : {{selectedMovie.id}}</div>
+            <div class="card-body">
+                <h4 class="card-title text-warning">{{selectedMovie.Title}} Released Year {{selectedMovie.Year}}</h4>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Description: {{selectedMovie.ShortDescription}}</li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Director: {{selectedMovie.Director}}</li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Genre: {{selectedMovie.Genre}}</li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Price: ₱ {{selectedMovie.Price}}</li>
+                </ul>
+                <a routerLink="/viewlists" class="card-link text-warning">
+                    Movie List
+                </a>
+
+                <a routerLink="/contactseller/{{selectedMovie.id}}" class="card-link text-warning">
+                    Contact Seller
+                </a>
+            </div>
+        </div>
+
+    </span>
+</div>
+

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "angular-in-memory-web-api": "^0.15.0",
     "firebase": "^9.14.0"
   }
 }

@@ -1,1 +1,48 @@
-<p>contact-seller works!</p>
+<div class="container">  
+    <div class="jumbotron">
+        <span class="list-group" *ngIf="selectedMovie">  
+          <h4 class="fw-bold">Message</h4>
+        <h1 class="display-3">Greetings Please send a Message!</h1>
+        <p class="lead text-muted">Hello! the movie you have picked is <a routerLink="/viewlists/" class="text-warning">{{selectedMovie.Title}}</a> with the Product ID <a routerLink="/viewlists/" class="text-warning">{{selectedMovie.id}}</a>, Please confirm and fill out the details below. Thank you! and have a pleasant day!</p>
+        <hr class="my-4">
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">First Name</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Last Name</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Input Address Here">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Email Address</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Input Email Address Here">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Please Check Box for confirmation!
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" routerLink="/viewlists/"  class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </span>
+      </div>
+    </div>
+    
